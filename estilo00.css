@@ -1,0 +1,328 @@
+*{
+    margin:0; 
+    padding:0;
+}
+body{
+    margin:0; 
+    padding:0;
+}
+header{
+   border: 0px solid #00e900;
+   background-image: linear-gradient(#06b9d100,#f8ffff00);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
+
+header nav #cabecalho-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    transition: all .3s linear;
+    font-family: 'Lobster', cursive;
+}
+
+header nav div{
+    padding: 0.5em;
+}
+.icone_titulo{
+    border: 0px solid red;
+}
+#icone_c{
+    font-size: 6vw;
+    padding: 0;
+    color: #f3e303;
+}
+/**/
+header nav .icone_titulo{
+    display: flex;
+}
+
+header nav .icone_titulo .titulo #titulo-principal{
+    color: #ecfd00;
+    
+}
+header nav .icone_titulo .titulo #sub-titulo{
+    color: #dacb00;
+    font-size: 1.8em;
+    padding: 0;
+}
+#sub-texto {
+color:#fff;
+}
+#menu_central ul{
+    border: 0px solid #0400ff;
+}
+#menu_central{
+    border:0px solid red;
+    width:60vw;
+}
+header #menu_central ul li{
+   border-left:1px solid #b8b6b6;
+    display: inline;
+    margin-right: 4%;
+    list-style: none;
+    overflow: hidden;
+}
+header #menu_central ul li a{
+    text-decoration: none;
+    padding: 2vh;
+    color:#fdfdfd;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #757575;
+}
+header #menu_central ul li a:hover{
+    color:#108ead;
+}
+#banner{
+    border: 0px solid #0400ff;
+    height: 99vh;
+    background-color: #12e08b;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.226))), url("../assets/img/barbeariaFundo.jpg");
+    background: linear-gradient(to bottom, rgba(109, 62, 34, 0.98) 0%, rgba(92, 77, 66, 0.247) 100%), url(../assets/img/barbeariaFundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#banner h1{
+    color:#fff;
+}
+#banner #texto-banner{
+    color:#fff;
+    border: 1px solid #fff;
+    width: 50%;
+    padding:20px;
+    margin: 1vh auto;
+}
+/*fim menu*/
+/*body*/
+main{
+border:0px solid red;
+font-family: 'Quicksand', sans-serif;
+}
+section{
+  border: 0px solid blueviolet;
+  text-align: center;
+  padding-top: 35vh;
+}
+#servicos-section{
+    display: flex;
+
+}
+.card img{
+    width: 100%;
+}
+/*serviço*/
+.cartao-corpo{
+    max-height: 39vh;
+    overflow-y: hidden;
+}
+/*depoimento*/
+#depoimento-section{
+    background-color: #fff;
+    background: linear-gradient(to bottom, rgba(37, 7, 43, 0.98) 0%, rgba(200, 147, 216, 0.082) 100%), url(../assets/img/room.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;        
+}
+#depoimento-section h2{
+    color: #fff;
+         
+}
+.conteudo-depoimento{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.conteudo-depoimento .cliente{
+    flex:1;
+    width: 17vw;
+    margin: 2%;
+    background-color: #fff;
+    border: 1px solid rgb(45, 1, 58);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.conteudo-depoimento .cliente .img-container img{
+    width: 20vw;
+    border: 5px solid #c5c5c5;
+    border-radius: 50%;
+}
+/*contato*/
+#contato-container{
+    display: flex;
+    border: 0px solid red;
+}
+#contato-container img{
+    width: 45vw;
+} 
+#contato-container form{
+    width: 43vw;
+    margin-left: 10%;
+}
+/*fundo*/
+footer{
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #464545;    
+}
+#assinatura{
+    font-family: 'Permanent Marker', cursive;
+}
+.rodape-caixa{
+    border:0px solid red;
+    color:#fff;
+}
+.rodape-caixa ul{
+    border:0px solid red;
+    text-align: center;
+}
+.rodape-caixa ul li{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 4%;
+    padding: 5%;
+    list-style: none;
+}
+.rodape-caixa ul li:hove{
+background-color: #a8a1a1;
+}
+.linha-rodape{
+    display: flex;
+    justify-content: center;
+      
+}
+.coluna{
+width: 23vw;
+margin: 2vw;
+padding: 2%;
+height: 45vh;
+overflow-y: hidden;
+}
+footer .bt-sociais {
+    text-align: center;
+}
+footer .bt-sociais i{
+    font-size: 6vh;
+    margin: 1vw;
+}
+.coluna img{
+    width: 25%;
+    height: 35%;
+    margin: 1%;
+}
+.coluna img:hover{
+   border: 1px solid #797979;
+}
+#fundo {
+    border: 1px solid #b77c01;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+}
+/*tablet & device*/
+/*tablet*/
+#menu_mobile{
+    display: none;
+    border:1px solid purple;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 2vw;
+    overflow: hidden;
+}
+#menu_mobile i{
+    font-size: 5vw;
+}
+/* menu escurecer*/
+.menuEscuro{
+    background-color: #6e5111;
+}
+/*trocar por classe*/
+    .lista-menu-mobile{
+        padding: 0;
+        border: 0px solid rgb(0, 247, 226);
+        text-align: center;
+        overflow-y: hidden;
+        transition: all .6s linear;
+        max-height: 0;
+        background-color: #757575;
+    }
+    #ul-menu-mobile li{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1px;
+        padding: 2%;
+        font-size: 1.1rem;
+        color: #fff !important;
+    }
+    #ul-menu-mobile li a{
+        color:#fff !important;
+    }    
+    .menu-fechado{
+        max-height: 0;
+    }
+    .menu-open{
+        max-height: 400px;
+    }
+    #lista-menu-mobile a{
+        color: rgb(189, 0, 0);
+    }
+@media (max-width:939px)
+{
+    /*home*/
+
+    #menu_central{
+        display: none;
+    }
+    #menu_mobile{
+        display: block;
+    }
+    #lista-menu-mobile{
+        display: block;
+    }
+    #icone_c{
+     display: block;
+     font-size: 20vw;
+    }
+    
+    /*seviços*/
+    #servicos-section{
+        flex-direction: column;
+    }
+    /*Depoimento*/
+    .conteudo-depoimento{
+        flex-direction: column;
+    }
+    .conteudo-depoimento .cliente{
+        width: 94vw;
+    }
+    /*contato*/
+    #map{
+        display:none;
+    }
+    #formulario-contato{
+        width: 94vw;
+    }
+}
+@media (max-width:425px)
+{
+    #rodape-texto{
+        display: none;
+    }
+    .coluna{
+        width: 45vw;
+    }
+}
+@media(max-width:320px)
+{
+    .linha-rodape {
+        flex-direction: column;
+    }
+    .linha-rodape .coluna{
+        width: 94vw;
+    }    
+}
