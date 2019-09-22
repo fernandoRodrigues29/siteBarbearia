@@ -324,5 +324,19 @@ footer .bt-sociais i{
     }
     .linha-rodape .coluna{
         width: 94vw;
-    }    
+    }
+    #texto-banner{
+        height: 30vh;
+        overflow-y: hidden;       
+    }
+    #titulo-principal,#sub-texto{
+        display: none;
+    }  
+    #formulario-contato input,  #formulario-contato textarea{
+        width: 80vw;
+    }  
+}
+@media(max-width:299px)
+{
+    
 }
