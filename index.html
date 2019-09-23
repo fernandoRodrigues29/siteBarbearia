@@ -25,6 +25,8 @@
     <!--  
     <link rel="stylesheet" href="assets/Font-Awesome-4.7.0/css/font-awesome.min.css">
   -->
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
 <body>
@@ -78,7 +80,7 @@
 
   </section>
   <section id="servicos-section">
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <img src="./assets/img/babeiro_00.jpg" alt="">
         <div class="card-body">
             <p class="card-text cartao-corpo">
@@ -90,7 +92,7 @@
             </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-left">
           <img src="./assets/img/babeiro_01.jpg" alt="">
           <div class="card-body">
               <p class="card-text cartao-corpo">
@@ -102,7 +104,7 @@
               </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left">
             <img src="./assets/img/babeiro_00.jpg" alt="">
             <div class="card-body">
                 <p class="card-text cartao-corpo">
@@ -118,7 +120,7 @@
   <section id="depoimento-section">
       <H2>DEPOIMENTOS</H2>
     <div class="conteudo-depoimento">
-      <div class="cliente">
+      <div class="cliente"  data-aos="fade-right">
         <div class="img-container">
           <img src="./assets/img/people_01.jpg" alt="imagem people">
           <p class="depoimento-texto">
@@ -126,7 +128,7 @@
           </p>
         </div>
       </div>
-      <div class="cliente">
+      <div class="cliente"   data-aos="zoom-in">
           <div class="img-container">
               <img src="./assets/img/corte2.jpg" alt="imagem people" class="rounded-circle">
             </div>
@@ -135,7 +137,7 @@
               </p>
       </div>
 
-      <div class="cliente">
+      <div class="cliente" data-aos="fade-left">
           <div class="img-container">
               <img src="./assets/img/corte3.jpg" alt="imagem people" class="rounded-circle">
             </div>
@@ -205,6 +207,11 @@
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/holder.min.js"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       Holder.addTheme('thumb', {
         bg: '#55595c',
@@ -226,8 +233,9 @@
                $('#cabecalho-menu').addClass('menuEscuro');
                $('#titulo-principal').css('display','none');
                $('#sub-texto').css('display','none'); 
-               $('#sub-titulo').css('padding-top','20px'); 
+               $('#sub-titulo').css('margin-top','7vh'); 
             }else{
+              $('#sub-titulo').css('margin-top','0vh'); 
                $('#cabecalho-menu').removeClass('menuEscuro');
                $('#titulo-principal').css('display','block');
                $('#sub-texto').css('display','block');
@@ -239,9 +247,9 @@
             //hsh = o que se tem no link
             if(this.hash !== "")
             {
-              /*
-              setTimeout($('.lista-menu-mobile').toggleClass('menu-open'),800);
-              */  
+              /**/
+              setTimeout($('.lista-menu-mobile').toggleClass('menu-open'),810);
+              /**/  
               console.log('ok esta clicando , e o hash e'+this.hash);
               //não vai pra lugar nenhum
               var hash = this.hash;

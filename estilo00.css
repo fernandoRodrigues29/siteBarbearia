@@ -19,7 +19,8 @@ header nav #cabecalho-menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5em;
+    padding: 10px;
+    max-height:19vh;
     transition: all .3s linear;
     font-family: 'Lobster', cursive;
 }
@@ -250,7 +251,7 @@ footer .bt-sociais i{
         overflow-y: hidden;
         transition: all .6s linear;
         max-height: 0;
-        background-color: #757575;
+        background-color: #6a3d22;
     }
     #ul-menu-mobile li{
         border-bottom: 1px solid #ccc;
