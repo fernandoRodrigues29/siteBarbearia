@@ -3,8 +3,8 @@
     padding:0;
 }
 body{
-    margin:0; 
-    padding:0;
+    margin:0 !important; 
+    padding:0 !important;
 }
 header{
    border: 0px solid #00e900;
