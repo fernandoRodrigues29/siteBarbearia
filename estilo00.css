@@ -220,19 +220,20 @@ margin: 0;
     font-size: 3rem;
 }
 #contato-container #horarios-info{
-   width: 50vw;
+   width: 48vw;
    padding-top: 20vh;
    padding-bottom: 20vh;
-   border: 0px solid red;
-   background: url(./assets/img/frramentas.jpg);
+   background: url(./assets/img/frramentas2.jpg);
    background-size: cover;
    text-align: left;
    padding-left: 10vw;
+  
 }
+
 .contato-horarios-titulos
 {
     color: #b77c01;
-    font-size: 3em;
+    font-size: 2.1em;
     text-shadow: 3px 1px 1px #000;
 }
 .contato-horarios-valor
@@ -241,11 +242,24 @@ margin: 0;
     font-size: 2em;
     text-shadow: 1px 1px 1px #000;
 }
+.contato-local-info
+{
+    color: #b77c01;
+    font-size: 2.1em;
+    text-shadow: 3px 1px 1px #000;
+    width: 67%;
+    margin-bottom: 2vh;  
+}
+
+#contatos-info .contato-local-info .fa
+{
+    margin-right: 10%; 
+}
 #contato-container #contatos-info{
-    width: 50vw;
+    width: 49vw;
     color: #fff;
     background-color: #000;
-   padding-top: 20vh;
+    padding-top: 20vh;
     padding-bottom: 20vh;
     text-align: left;
     padding-left: 10vw;
@@ -304,8 +318,9 @@ footer .bt-sociais i{
    border: 1px solid #797979;
 }
 #fundo {
-    border: 1px solid #b77c01;
-    width: 100%;
+    border: 0px solid #b77c01;
+    width: 100vw;
+    padding:1vh ;
     color: #fff;
     background-color: black;
     text-align: center;
@@ -449,6 +464,11 @@ footer .bt-sociais i{
     
     header nav #cabecalho-menu img {
         width: 25vw !important;
+    }
+    .contato-local-info {
+        color: #b77c01;
+        font-size: 2.7em;
+        width: 73%;
     }
 
 }
