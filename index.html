@@ -9,7 +9,7 @@
       <link rel="icon" href="./favicon.ico">
     -->
     <link rel="icon" href="./dev-icon-8.jpg">
-    <title>institucional animado 02</title>
+    <title>Barber-shop 1.5</title>
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo00.css">
@@ -27,7 +27,7 @@
   -->
   <!--AOS--
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
--->
+  <!---->
   </head>
 
 <body>
@@ -35,15 +35,15 @@
   <nav>
     <div id="cabecalho-menu">
         <div class="icone_titulo">
-            <div id="icone_c">
-              <i class="fa fa-scissors" aria-hidden="true"></i>
-            </div>
-            <div class="titulo">
+            <!-- <div id="icone_c"> -->
+              <img src="./assets/img/tesoura-logo.png">
+            <!-- </div> -->
+            <!-- <div class="titulo">
               <div id="titulo-principal">Barbearia</div>
               <div id="sub-titulo">Tesoura D'ouro</div>
               <p id="sub-texto">Seu corte Perfeito</p>
-            </div>
-          </div>
+            </div> -->
+        </div>
           <div id="menu_central">
                 <ul>
                   <li><a href="#banner">Home</a></li>
@@ -74,47 +74,50 @@
     <h1>BARBER SHOP</h1>
     <div id="texto-banner">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius malesuada quam,
-                gravida porta nisi suscipit eget.
+        Marque um Horario 
+      </p>
+      <p>
+         (99) 99999-9999
       </p>
     </div>
 
   </section>
   <section id="servicos-section">
       <div class="card" data-aos="flip-left">
-        <img src="./assets/img/babeiro_00.jpg" alt="">
+        <img src="./assets/img/servico1.jpg" alt="">
         <div class="card-body">
             <p class="card-text cartao-corpo">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius malesuada quam,
-                gravida porta nisi suscipit eget. Pellentesque mattis magna ex,
-                 quis convallis ligula hendrerit ut. Sed pretium ligula nulla,
-                  pharetra porttitor urna congue vitae.
-                   Vivamus id dui in dui blandit luctus vitae ac tellus.
+              Corte de Cabelo  - $30
             </p>
+            <ul class="lista-precos">
+              <li>Na Tesoura - <span>$30</span> </li>
+              <li>Na Maquina - <span>$20</span></li>
+            </ul>
         </div>
       </div>
       <div class="card" data-aos="flip-left">
-          <img src="./assets/img/babeiro_01.jpg" alt="">
+          <img src="./assets/img/servico2.jpg" alt="">
           <div class="card-body">
-              <p class="card-text cartao-corpo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius malesuada quam,
-                  gravida porta nisi suscipit eget. Pellentesque mattis magna ex,
-                   quis convallis ligula hendrerit ut. Sed pretium ligula nulla,
-                    pharetra porttitor urna congue vitae.
-                     Vivamus id dui in dui blandit luctus vitae ac tellus.
-              </p>
+            <p class="card-text cartao-corpo">
+              Barba - $30
+            </p>
+            <ul class="lista-precos">
+              <li>Na Tesoura - <span>$30</span> </li>
+              <li>Na Maquina - <span>$20</span> </li>
+            </ul>
           </div>
         </div>
         <div class="card" data-aos="flip-left">
-            <img src="./assets/img/babeiro_00.jpg" alt="">
+            <img src="./assets/img/servico3.jpg" alt="">
             <div class="card-body">
-                <p class="card-text cartao-corpo">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius malesuada quam,
-                    gravida porta nisi suscipit eget. Pellentesque mattis magna ex,
-                     quis convallis ligula hendrerit ut. Sed pretium ligula nulla,
-                      pharetra porttitor urna congue vitae.
-                       Vivamus id dui in dui blandit luctus vitae ac tellus.
-                </p>
+              <p class="card-text cartao-corpo">
+                Tratamentos - $50
+              </p>
+              <ul class="lista-precos">
+                <li>Para Barba - <span>$30</span> </li>
+                <li>Cabelo - <span>$20</span> </li>
+                <li>Depilação - <span>$50</span> </li>
+              </ul>
             </div>
           </div>              
   </section>
@@ -123,7 +126,7 @@
     <div class="conteudo-depoimento">
       <div class="cliente"  data-aos="fade-right">
         <div class="img-container">
-          <img src="./assets/img/people_01.jpg" alt="imagem people">
+          <img src="./assets/img/corte4.jpg" alt="imagem people">
           <p class="depoimento-texto">
              " Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
           </p>
@@ -152,26 +155,22 @@
     </div>
   </section>
   <section id="contato-section">
-      <p>CONTATO</p>
+      
       <div id="contato-container">
-          <div id="map">
-            <img src="./assets/img/frente.jpg" alt="">
-            </div>
-            <div id="formulario-contato"> 
-                <form action="" method="post">
-                  <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Nome">
-                  </div>
-                  <div class="form-group">
-                        <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="E-Mail">
-                  </div>                  
-                  <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Mensagem</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-primary">Enviar</button> 
-                  </form>
-            </div>
+          <div id="horarios-info">
+              <h4>Venha Conferir</h4>
+              <div class='contato-horarios-titulos'> Semana</div>
+              <p class="contato-horarios-valor"> 08:00 ~ 22h </p>
+              <div class='contato-horarios-titulos'>Fim de Semana</div>
+              <p class="contato-horarios-valor">09:00h ~ 12:00h </p>
+          </div>
+          <div id="contatos-info"> 
+            <h4>Contato</h4>
+            <div class='contato-horarios-titulos'> (99) 99999-9999 </div>
+            <div class='contato-horarios-titulos'>email@email.com</div>
+            <div class='contato-horarios-titulos'>Endereço jashkjdhs shjdhjash jkhajkshd</div>
+            
+          </div>
             
       </div>
 
@@ -244,22 +243,43 @@
             }
         });
         /*scroolspy animação*/
-        $("#menu_central a, #ul-menu-mobile a").on("click", function(event){
+        $("#menu_central a").on("click", function(event){
             //hsh = o que se tem no link
-            if(this.hash !== "")
-            {
-              /**/
-              setTimeout($('.lista-menu-mobile').toggleClass('menu-open'),810);
-              /**/  
-              console.log('ok esta clicando , e o hash e'+this.hash);
-              //não vai pra lugar nenhum
-              var hash = this.hash;
-                $("html").animate({
-                  scrollTop: $(hash).offset().top
-                },800,function(){
-                  window.location.hash=hash;
+              if(this.hash !== "")
+              {
+                //checar se está marcado, se não modificar
+                $('#menu_central li a').each(function(elements) {
+                  $(this).removeClass('menu-marcado')
                 });
-            }
+                //adicionar a classe
+                $(this).toggleClass('menu-marcado');
+
+                console.log('ok esta clicando , e o hash e'+this.hash);
+                //não vai pra lugar nenhum
+                var hash = this.hash;
+                  $("html").animate({
+                    scrollTop: $(hash).offset().top
+                  },800,function(){
+                    window.location.hash=hash;
+                  });
+              }
+        });      
+        
+        $("#ul-menu-mobile a").on("click", function(event){
+            //hsh = o que se tem no link
+              if(this.hash !== "")
+              {
+               
+                setTimeout($('.lista-menu-mobile').toggleClass('menu-open'),810);
+                console.log('ok esta clicando , e o hash e'+this.hash);
+                //não vai pra lugar nenhum
+                var hash = this.hash;
+                  $("html").animate({
+                    scrollTop: $(hash).offset().top
+                  },800,function(){
+                    window.location.hash=hash;
+                  });
+              }
         });      
     </script>
   </body>

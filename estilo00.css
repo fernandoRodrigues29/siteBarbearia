@@ -1,3 +1,19 @@
+@font-face {
+    /* font-family: vintageWarehouse; */
+    font-family: cabbagetown;
+    src: url(./assets/fontes/Cabbagetown.ttf);
+}
+
+@font-face {
+    /* font-family: vintageWarehouse; */
+    font-family: cavalier;
+    src: url(./assets/fontes/Cavalier.ttf);
+}
+@font-face {
+    font-family: SherlockVintage;
+    src: url(./assets/fontes/SherlockVintage.ttf);
+}
+
 *{
     margin:0; 
     padding:0;
@@ -5,6 +21,9 @@
 body{
     margin:0 !important; 
     padding:0 !important;
+}
+nav{
+    /* box-shadow: 5px 6px 9px 0px #5e3204; */
 }
 header{
    border: 0px solid #00e900;
@@ -17,12 +36,17 @@ header{
 
 header nav #cabecalho-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     max-height:19vh;
     transition: all .3s linear;
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav #cabecalho-menu img {
+    width: 8vw !important;
 }
 
 header nav div{
@@ -31,11 +55,7 @@ header nav div{
 .icone_titulo{
     border: 0px solid red;
 }
-#icone_c{
-    font-size: 6vw;
-    padding: 0;
-    color: #f3e303;
-}
+
 /**/
 header nav .icone_titulo{
     display: flex;
@@ -58,24 +78,29 @@ color:#fff;
 }
 #menu_central{
     border:0px solid red;
-    width:60vw;
+    width:39vw;
 }
 header #menu_central ul li{
-   border-left:1px solid #b8b6b6;
     display: inline;
-    margin-right: 4%;
     list-style: none;
     overflow: hidden;
 }
+
+
 header #menu_central ul li a{
     text-decoration: none;
     padding: 2vh;
     color:#fdfdfd;
     font-size: 1.2em;
     text-shadow: 1px 1px #757575;
+    transition: .2s;
 }
 header #menu_central ul li a:hover{
-    color:#108ead;
+    border-bottom: 3px solid #f2da09;
+}
+
+.menu-marcado {
+    border-bottom: 3px solid #f2da09;
 }
 #banner{
     border: 0px solid #0400ff;
@@ -89,6 +114,7 @@ header #menu_central ul li a:hover{
     text-align: center;
 }
 #banner h1{
+    font-family: cabbagetown;
     color:#fff;
 }
 #banner #texto-banner{
@@ -96,7 +122,10 @@ header #menu_central ul li a:hover{
     border: 1px solid #fff;
     width: 50%;
     padding:20px;
-    margin: 1vh auto;
+    margin: 9vh auto;
+    font-family: 'cabbagetown';
+    color: #cdbc0d;
+    text-shadow: 4px 5px 2px black;
 }
 /*fim menu*/
 /*body*/
@@ -111,7 +140,12 @@ section{
 }
 #servicos-section{
     display: flex;
-
+    justify-content: space-around;
+    padding-bottom: 24vh;
+}
+.card{
+    width: 30vw;
+   
 }
 .card img{
     width: 100%;
@@ -120,7 +154,21 @@ section{
 .cartao-corpo{
     max-height: 39vh;
     overflow-y: hidden;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #000;
 }
+.lista-precos
+{
+    list-style: none;
+    font-size: 1.7em;
+}
+
+.lista-precos span
+{
+    color:#d3d00e
+}
+
 /*depoimento*/
 #depoimento-section{
     background-color: rgb(231, 233, 233);
@@ -155,16 +203,52 @@ section{
     border-radius: 50%;
 }
 /*contato*/
+#contato-section
+{   
+    padding:0;
+margin: 0;
+    /* background: url(./assets/img/frramentas.jpg); */
+    /* background-size: cover; */
+}
 #contato-container{
     display: flex;
-    border: 0px solid red;
+    flex-wrap: wrap;
 }
-#contato-container img{
-    width: 45vw;
-} 
-#contato-container form{
-    width: 43vw;
-    margin-left: 10%;
+#contato-container h4 {
+    color: #fff;
+    text-shadow: 3px 1px 1px #000;
+    font-size: 3rem;
+}
+#contato-container #horarios-info{
+   width: 50vw;
+   padding-top: 20vh;
+   padding-bottom: 20vh;
+   border: 0px solid red;
+   background: url(./assets/img/frramentas.jpg);
+   background-size: cover;
+   text-align: left;
+   padding-left: 10vw;
+}
+.contato-horarios-titulos
+{
+    color: #b77c01;
+    font-size: 3em;
+    text-shadow: 3px 1px 1px #000;
+}
+.contato-horarios-valor
+{
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #000;
+}
+#contato-container #contatos-info{
+    width: 50vw;
+    color: #fff;
+    background-color: #000;
+   padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: left;
+    padding-left: 10vw;
 }
 /*fundo*/
 footer{
@@ -230,18 +314,19 @@ footer .bt-sociais i{
 /*tablet*/
 #menu_mobile{
     display: none;
-    border:1px solid purple;
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #b9950b;
     font-size: 2vw;
     overflow: hidden;
 }
 #menu_mobile i{
     font-size: 5vw;
+    
 }
 /* menu escurecer*/
 .menuEscuro{
-    background-color: #6e5111;
+    background-color: #693c21;
+    box-shadow: 5px 6px 9px 0px #5e3204;
 }
 /*trocar por classe*/
     .lista-menu-mobile{
@@ -272,6 +357,21 @@ footer .bt-sociais i{
     #lista-menu-mobile a{
         color: rgb(189, 0, 0);
     }
+@media (max-width:1024px)
+{
+    #menu_central {
+        width: 50vw;
+    }
+
+    #contato-container #horarios-info{
+        width: 100vw;
+    }
+    #contato-container #contatos-info{
+        width: 100vw;
+        overflow: hidden;
+        font-size: .5em;
+    }
+}    
 @media (max-width:939px)
 {
     /*home*/
@@ -285,9 +385,18 @@ footer .bt-sociais i{
     #lista-menu-mobile{
         display: block;
     }
+    
     #icone_c{
      display: block;
      font-size: 20vw;
+    }
+    
+    .icone_titulo img{
+            width: 10vw;
+    }
+
+    #imagem_logo{
+        width: 1.3em;
     }
     
     /*seviços*/
@@ -309,6 +418,13 @@ footer .bt-sociais i{
         width: 94vw;
     }
 }
+@media (max-width:768px)
+{
+    .card{
+        width: 100vw;
+    }
+}
+
 @media (max-width:425px)
 {
     #rodape-texto{
@@ -317,6 +433,24 @@ footer .bt-sociais i{
     .coluna{
         width: 45vw;
     }
+    #banner>h1{
+        font-size: 1em;
+    }
+
+    #banner #texto-banner {
+        color: #fff;
+        border: 1px solid #fff;
+        width: 83vw;
+        padding: 20px;
+        margin: 9vh auto;
+        font-family: 'cabbagetown';
+        font-size: 11px;
+    }
+    
+    header nav #cabecalho-menu img {
+        width: 25vw !important;
+    }
+
 }
 @media(max-width:320px)
 {
@@ -327,14 +461,25 @@ footer .bt-sociais i{
         width: 94vw;
     }
     #texto-banner{
-        height: 30vh;
-        overflow-y: hidden;       
+        height: 15vh;
+        overflow-y: hidden;
+        font-size: .4rem;
+        width: 90vw;       
     }
     #titulo-principal,#sub-texto{
         display: none;
     }  
     #formulario-contato input,  #formulario-contato textarea{
         width: 80vw;
+    }
+    #banner #texto-banner {
+        color: #fff;
+        border: 1px solid #fff;
+        width: 83vw;
+        padding: 20px;
+        margin: 9vh auto;
+        font-family: 'cabbagetown';
+        font-size: 9px;
     }  
 }
 @media(max-width:299px)
